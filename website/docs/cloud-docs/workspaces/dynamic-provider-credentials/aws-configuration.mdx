@@ -95,7 +95,7 @@ You’ll need to set some environment variables in your Terraform Cloud workspac
 ### Required Environment Variables
 | Variable                | Value                                               | Notes                                                                                                                                                                                                                                     |
 |-------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `TFC_AWS_PROVIDER_AUTH` | `true`                                              | Must be present and set to `true`, or Terraform Cloud will not attempt to authenticate to AWS.                                                                                                                                            |
+| `TFC_AWS_PROVIDER_AUTH` | `true`                                              | Must be present and set to `true` (case-sensitive), or Terraform Cloud will not attempt to authenticate to AWS.                                                                                                                                            |
 | `TFC_AWS_RUN_ROLE_ARN`  | The arn of the AWS role arn to authenticate against | Optional if `TFC_AWS_PLAN_ROLE_ARN` and `TFC_AWS_APPLY_ROLE_ARN` are both provided. These variables are described [below](/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration#optional-environment-variables) |
 
 ### Optional Environment Variables
